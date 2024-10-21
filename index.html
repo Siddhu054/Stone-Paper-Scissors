@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <div class="scores">
+            <div class="score-box">
+                <p>COMPUTER SCORE</p>
+                <span class="computer-score">0</span>
+            </div>
+            <div class="score-box">
+                <p>YOUR SCORE</p>
+                <span class="player-score">0</span>
+            </div>
+        </div>
+
+        <!-- Here we add a dedicated area for the result -->
+        <div class="result-display">
+            <h2 id="result-text">Make your move!</h2>
+        </div>
+
+        <div class="choices-container">
+            <div class="choices">
+                <button class="choice rock">✊</button>
+                <button class="choice paper">✋</button>
+                <button class="choice scissors">✌️</button>
+            </div>
+        </div>
+
+        <div class="rules-box">
+            <button class="rules-btn">RULES</button>
+            <div class="rules-content hidden">
+                <h3>Game Rules</h3>
+                <ul>
+                    <li>Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.</li>
+                    <li>Agree ahead of time whether you'll count out "rock, paper, scissors, shoot" or "just rock, paper, scissors".</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+                    <li>If both players lay down the same hand, each player lays down another hand.</li>
+                </ul>
+                <button class="close-rules">X</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
